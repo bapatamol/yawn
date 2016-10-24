@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+}
+p#profile
+{
+	position:relative;
+	top:10px;
+	width:300px;
+	border-style:solid;
+	border-width:1px;}
+p#friends
+{
+	position:relative;
+	left:400px;
+	width:50px;
+	border-style:solid;
+	border-width:1px;}
+p#friends
+{
+	position:relative;
+	bottom:10px;
+	border-style:solid;
+	border-width:1px;}
+p#notice
+{
+	border-style:solid;
+	border-width:1px;
+}
+p#testimonials
+{
+	border-style:solid;
+	border-width:1px;}
+p#searchResults
+{
+	border-style:solid;
+	border-width:1px;
+	position:absolute;
+	left:600px;
+	width:50px;
+
+}
+p#suggestions
+{
+	border-style:solid;
+	border-width:1px;
+	position:absolute;
+	left:600px;
+	top:200px;
+	width:50px;
+}

@@ -1,0 +1,107 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.4
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 27, 2015 at 07:33 PM
+-- Server version: 5.1.57
+-- PHP Version: 5.2.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `a7799245_yawn`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `friendrequest`
+--
+
+CREATE TABLE `friendrequest` (
+  `fromId` int(11) NOT NULL,
+  `toId` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `friendrequest`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `friends`
+--
+
+CREATE TABLE `friends` (
+  `fromId` int(11) NOT NULL,
+  `toId` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `friends`
+--
+
+INSERT INTO `friends` VALUES(1430177046, 1430176807);
+INSERT INTO `friends` VALUES(1430176807, 1430177046);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `profile`
+--
+
+CREATE TABLE `profile` (
+  `id` int(11) NOT NULL,
+  `name` varchar(1000) COLLATE latin1_general_ci NOT NULL,
+  `country` varchar(1000) COLLATE latin1_general_ci NOT NULL,
+  `character` varchar(1000) COLLATE latin1_general_ci NOT NULL,
+  `employer` varchar(1000) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `profile`
+--
+
+INSERT INTO `profile` VALUES(1430176807, 'Amol Bapat', 'New Zealand', 'Jesus', 'Breakfast4Brain');
+INSERT INTO `profile` VALUES(1430177046, 'Renuka Chhatre', 'New Zealand', 'Robert California', 'Maersk');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimonials`
+--
+
+CREATE TABLE `testimonials` (
+  `fromId` int(11) NOT NULL,
+  `toId` int(11) NOT NULL,
+  `testimonial` blob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `testimonials`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `password` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` VALUES(1430176807, 'amol', '9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684');
+INSERT INTO `users` VALUES(1430177046, 'renu', '9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684');
